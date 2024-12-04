@@ -14,7 +14,7 @@ btn.addEventListener('click', () => {
     }
     else {
         if (validation()) {
-            location.href = '/home.html'
+            location.href = './home.html'
         }
         else {
             wrongValid.classList.add('d-none')
