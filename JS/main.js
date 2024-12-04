@@ -24,6 +24,7 @@ btn.addEventListener('click', () => {
 })
 
 function validation() {
+    if(accs != null){
     for (var i = 0; i < accs.length; i++) {
         if (email.value == accs[i].email && pass.value == accs[i].pass) {
             sessionStorage.setItem('acc', accs[i].name)
@@ -31,5 +32,9 @@ function validation() {
         }
     }
     return false;
+    }
+    else {
+        wrongAcc.classList.remove('d-none')
+    }
 }
 
